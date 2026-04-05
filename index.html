@@ -13,16 +13,16 @@
   --lv1:#7ab898;--lv2:#c8a060;--lv3:#c07070;
 }
 body{background:var(--bg);color:var(--text);font-family:'Segoe UI',system-ui,sans-serif;min-height:100vh}
-#app{max-width:1100px;margin:0 auto;padding:40px 24px 60px}
+#app{max-width:1020px;margin:0 auto;padding:32px 20px 60px}
 
 /* Header */
-header{padding-bottom:28px;border-bottom:1px solid var(--border);margin-bottom:28px}
+header{padding-bottom:24px;border-bottom:1px solid var(--border);margin-bottom:24px}
 .eyebrow{font-size:10px;letter-spacing:.2em;text-transform:uppercase;color:var(--text3);margin-bottom:14px;font-family:'Segoe UI',system-ui,sans-serif}
-h1{font-size:28px;font-weight:400;font-family:'Georgia',serif;color:var(--text);line-height:1.2;margin-bottom:8px}
+h1{font-size:22px;font-weight:400;font-family:'Georgia',serif;color:var(--text);line-height:1.2;margin-bottom:8px}
 h1 em{font-style:italic;color:var(--orange);font-weight:400}
-.subtitle{font-size:13px;color:var(--text3);font-style:italic;margin-bottom:20px}
-.stats-row{display:flex;gap:32px;flex-wrap:wrap}
-.stat-n{font-size:22px;font-weight:700;color:var(--text);font-family:'Georgia',serif;line-height:1}
+.subtitle{font-size:13px;color:var(--text3);font-style:italic;margin-bottom:16px}
+.stats-row{display:flex;gap:20px;flex-wrap:wrap;margin-top:4px}
+.stat-n{font-size:18px;font-weight:700;color:var(--text);font-family:'Georgia',serif;line-height:1}
 .stat-l{font-size:10px;color:var(--text3);text-transform:uppercase;letter-spacing:.1em;margin-top:3px}
 
 /* Controls */
@@ -40,8 +40,8 @@ input[type=text]::placeholder{color:var(--text3)}
 .filter-row{display:flex;gap:6px;flex-wrap:wrap;align-items:center;margin-bottom:10px}
 .filter-label{font-family:'Segoe UI',system-ui,sans-serif;font-size:10px;text-transform:uppercase;letter-spacing:.15em;color:var(--text3);margin-right:4px}
 .lvl-pill{font-family:'Segoe UI',system-ui,sans-serif;padding:4px 14px;border-radius:20px;font-size:11px;font-weight:600;cursor:pointer;transition:all .15s;border:1px solid var(--border2);color:var(--text3);background:transparent}
-.lvl-pill:hover{color:var(--text2)}
-.lvl-pill.on{color:var(--text);border-color:var(--border2);background:var(--bg3)}
+.lvl-pill:hover{color:var(--text2);border-color:var(--text3)}
+.lvl-pill.on{color:var(--text);border-color:var(--text2);background:transparent}
 .cat-bar{display:flex;gap:5px;flex-wrap:wrap;margin-bottom:14px}
 .cat-pill{font-family:'Segoe UI',system-ui,sans-serif;padding:4px 12px;border-radius:20px;font-size:11px;cursor:pointer;transition:all .15s;border:1px solid transparent;color:var(--text3);background:transparent}
 .cat-pill:hover{color:var(--text2)}
@@ -49,19 +49,19 @@ input[type=text]::placeholder{color:var(--text3)}
 .info-row{font-family:'Segoe UI',system-ui,sans-serif;font-size:11px;color:var(--text3);margin-bottom:12px}
 
 /* Grid — separated by 1px lines like a table */
-.vocab-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:1px;background:var(--border)}
+.vocab-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:1px;background:var(--border)}
 .card{background:var(--bg);padding:18px 20px;cursor:pointer;transition:background .12s;position:relative}
 .card:hover{background:var(--bg2)}
 .card.open{background:var(--bg2)}
 .card-top{display:flex;justify-content:space-between;align-items:flex-start;gap:8px}
-.term{font-size:14px;font-weight:700;color:var(--text);font-family:'Segoe UI',system-ui,sans-serif;line-height:1.3}
+.term{font-size:14px;font-weight:400;color:var(--text);font-family:'Segoe UI',system-ui,sans-serif;line-height:1.3}
 .chevron{color:var(--text3);flex-shrink:0;transition:transform .2s;margin-top:2px}
 .meta{display:flex;align-items:center;gap:8px;margin-top:5px}
 .cat-label{font-family:'Segoe UI',system-ui,sans-serif;font-size:11px;color:var(--text3)}
 .lbadge{font-family:'Segoe UI',system-ui,sans-serif;font-size:9px;font-weight:700;padding:2px 7px;border-radius:3px;letter-spacing:.08em;text-transform:uppercase}
-.lv1b{color:var(--lv1);border:1px solid var(--lv1);background:transparent}
-.lv2b{color:var(--lv2);border:1px solid var(--lv2);background:transparent}
-.lv3b{color:var(--lv3);border:1px solid var(--lv3);background:transparent}
+.lv1b{color:var(--lv1);background:transparent}
+.lv2b{color:var(--lv2);background:transparent}
+.lv3b{color:var(--lv3);background:transparent}
 .def{font-family:'Segoe UI',system-ui,sans-serif;font-size:13px;color:var(--text2);margin-top:10px;line-height:1.7}
 .detail{margin-top:12px;padding-top:12px;border-top:1px solid var(--border);display:none}
 .card.open .detail{display:block}
